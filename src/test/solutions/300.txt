@@ -1,1 +1,1 @@
-Program([VarDecl(Id(b),ArrayLiteral(IntLiteral(1),StringLiteral(update),IntLiteral(5),ArrayLiteral(FloatLiteral(0.05),IntLiteral(255))))])
+Program([VarDecl(Id(a))])

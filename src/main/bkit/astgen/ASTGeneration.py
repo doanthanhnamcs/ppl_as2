@@ -193,22 +193,25 @@ class ASTGeneration(BKITVisitor):
         if ctx.ID():
             arr = Id(ctx.ID().getText())
         else:
-            lst = self.visit(ctx.func_call())
-            arr = CallExpr(lst[0], lst[1:])
+            name,lst = self.visit(ctx.func_call())
+            arr = CallExpr(name, lst)
         idx = self.visit(ctx.index_op())
         return ArrayCell(arr, idx)
 
     def visitFunc_call(self, ctx: BKITParser.Func_callContext):
         lst = []
-        lst += [Id(ctx.ID().getText())]
-        lst += self.visit(ctx.list_argument())
-        return lst
+        name = Id(ctx.ID().getText())
+        if ctx.list_argument():
+            lst += self.visit(ctx.list_argument())
+            return name,lst
+        else:
+            return name,[]
 
     def visitIndex_op(self, ctx: BKITParser.Index_opContext):
         lst = []
         if ctx.index_op():
-            lst += [self.visit(ctx.exp())]
-            lst += self.visit(ctx.index_op())
+            lst = [self.visit(ctx.exp())]+ self.visit(ctx.index_op())
+            
         else:
             lst += [self.visit(ctx.exp())]
         return lst
@@ -216,8 +219,7 @@ class ASTGeneration(BKITVisitor):
     def visitList_argument(self, ctx: BKITParser.List_argumentContext):
         lst = []
         if ctx.list_argument():
-            lst += [self.visit(ctx.exp())]
-            lst += self.visit(ctx.list_argument())
+            lst = [self.visit(ctx.exp())] + self.visit(ctx.list_argument())
         else:
             lst += [self.visit(ctx.exp())]
         return lst
@@ -324,8 +326,8 @@ class ASTGeneration(BKITVisitor):
         return [Continue()]
 
     def visitCall_stm(self, ctx: BKITParser.Call_stmContext):
-        lst = self.visit(ctx.func_call())
-        return [CallStmt(lst[0], lst[1:])]
+        name,lst = self.visit(ctx.func_call())
+        return [CallStmt(name,lst)]
 
     def visitReturn_stm(self, ctx: BKITParser.Return_stmContext):
         if ctx.exp():
@@ -392,7 +394,8 @@ class ASTGeneration(BKITVisitor):
         if ctx.ID():
             return Id(ctx.ID().getText())
         if ctx.func_call():
-            return self.visit(ctx.func_call())
+            name,lst= self.visit(ctx.func_call())
+            return CallExpr(name,lst)
         if ctx.exp():
             return self.visit(ctx.exp())
         else:
