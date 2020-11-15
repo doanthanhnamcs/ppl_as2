@@ -1,5 +1,4 @@
-Function: main
-                    Body:
-                    Var: x=3,y=5.;
-                    EndBody.
+ 
+        
+        Var : b = {1,"update",5,{0.5e-1,0xFF}};
         

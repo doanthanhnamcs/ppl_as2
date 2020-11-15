@@ -149,7 +149,7 @@ exp5: SUBINT exp5 | SUBFLOAT exp5 | exp6;
 exp6: literal | ID | func_call | LP exp RP | element_exp;
 element_exp: (ID | func_call) index_op;
 index_op: LSB exp RSB | LSB exp RSB index_op;
-func_call: ID LP list_argument RP;
+func_call: ID LP list_argument* RP;
 list_argument: exp (COMMA list_argument)?;
 
 // =====================LEXER==================\\

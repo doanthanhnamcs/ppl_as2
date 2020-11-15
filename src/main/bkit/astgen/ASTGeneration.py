@@ -4,6 +4,7 @@ from AST import *
 
 
 class ASTGeneration(BKITVisitor):
+
     def visitProgram(self, ctx: BKITParser.ProgramContext):
         return Program(self.visit(ctx.declarations()))
 
@@ -36,7 +37,7 @@ class ASTGeneration(BKITVisitor):
             return [VarDecl(id, dimen, literal)]
         else:
             dimen = self.visit(ctx.composit())
-            id = ctx.ID().getText()
+            id = Id(ctx.ID().getText())
             if ctx.ASSIGN():
                 literal = self.visit(ctx.literal())
             else:
@@ -47,8 +48,21 @@ class ASTGeneration(BKITVisitor):
         return Id(ctx.ID().getText())
 
     def visitComposit(self, ctx: BKITParser.CompositContext):
-        lst = ctx.INT_LIT()
-        return list(map(lambda x: int(x.getText()), lst))
+        intlist = ctx.INT_LIT()
+        lst = []
+        for j in intlist:
+            i=j.getText()
+            x = i.find('x')
+            X = i.find('X')
+            o = i.find('o')
+            O = i.find('O')
+            if(x != -1 or X != -1):
+                lst += [str(int(i, 16))]
+            elif(o != -1 or O != -1):
+                lst += [str(int(i, 8))]
+            else:
+                lst += [i]
+        return list(map(lambda x: IntLiteral(int(x)), lst))
 
     def visitArray_lit(self, ctx: BKITParser.Array_litContext):
         lst = []
@@ -59,7 +73,18 @@ class ASTGeneration(BKITVisitor):
     def visitArray_value(self, ctx: BKITParser.Array_valueContext):
         arr = []
         if ctx.INT_LIT():
-            arr += [IntLiteral(int(ctx.INT_LIT().getText()))]
+            i = ctx.INT_LIT().getText()
+            x = i.find('x')
+            X = i.find('X')
+            o = i.find('o')
+            O = i.find('O')
+            if(x != -1 or X != -1):
+                convert = int(i, 16)
+            elif(o != -1 or O != -1):
+                convert = int(i, 8)
+            else:
+                convert = int(i)
+            arr += [IntLiteral(convert)]
         if ctx.FLOAT_LIT():
             arr += [FloatLiteral(float(ctx.FLOAT_LIT().getText()))]
         if ctx.BOOLEAN_LIT():
@@ -67,12 +92,23 @@ class ASTGeneration(BKITVisitor):
         if ctx.STRING_LIT():
             arr += [StringLiteral(ctx.STRING_LIT().getText())]
         if ctx.array_lit():
-            arr += self.visit(ctx.array_lit())
+            arr += [self.visit(ctx.array_lit())]
         return arr
 
     def visitLiteral(self, ctx: BKITParser.LiteralContext):
         if ctx.INT_LIT():
-            return IntLiteral(int(ctx.INT_LIT().getText()))
+            i = ctx.INT_LIT().getText()
+            x = i.find('x')
+            X = i.find('X')
+            o = i.find('o')
+            O = i.find('O')
+            if(x != -1 or X != -1):
+                convert = int(i, 16)
+            elif(o != -1 or O != -1):
+                convert = int(i, 8)
+            else:
+                convert = int(i)
+            return IntLiteral(convert)
         elif ctx.FLOAT_LIT():
             return FloatLiteral(float(ctx.FLOAT_LIT().getText()))
         elif ctx.BOOLEAN_LIT():
@@ -119,7 +155,7 @@ class ASTGeneration(BKITVisitor):
             return [VarDecl(id, dimen, literal)]
         else:
             dimen = self.visit(ctx.composit())
-            id = ctx.ID().getText()
+            id = Id(ctx.ID().getText())
             literal = None
             return [VarDecl(id, dimen, literal)]
 
@@ -165,7 +201,7 @@ class ASTGeneration(BKITVisitor):
     def visitFunc_call(self, ctx: BKITParser.Func_callContext):
         lst = []
         lst += [Id(ctx.ID().getText())]
-        lst += self.visit(ctx.list_arguments())
+        lst += self.visit(ctx.list_argument())
         return lst
 
     def visitIndex_op(self, ctx: BKITParser.Index_opContext):
@@ -177,11 +213,11 @@ class ASTGeneration(BKITVisitor):
             lst += [self.visit(ctx.exp())]
         return lst
 
-    def visitList_arguments(self, ctx: BKITParser.List_argumentsContext):
+    def visitList_argument(self, ctx: BKITParser.List_argumentContext):
         lst = []
-        if ctx.list_arguments():
+        if ctx.list_argument():
             lst += [self.visit(ctx.exp())]
-            lst += self.visit(ctx.list_arguments())
+            lst += self.visit(ctx.list_argument())
         else:
             lst += [self.visit(ctx.exp())]
         return lst
@@ -193,11 +229,11 @@ class ASTGeneration(BKITVisitor):
         # ifthenStmt:List[Tuple[Expr,List[VarDecl],List[Stmt]]]
         # elseStmt:Tuple[List[VarDecl],List[Stmt]] # for Else branch, empty list if no Else
         ifthenStm += [self.visit(ctx.ifthen_stm())]
-        if ctx.ELSE():
+        if ctx.else_stm():
             elseStm = self.visit(ctx.else_stm())
         else:
             elseStm = []
-        if ctx.ELSEIF():
+        if ctx.elif_stm():
             for i in range(len(ctx.elif_stm())):
                 ifthenStm += [self.visit(ctx.elif_stm(i))]
         return [If(ifthenStm, elseStm)]
@@ -254,7 +290,7 @@ class ASTGeneration(BKITVisitor):
         loop = (varlst, stmlst)
         return [For(idx1, expr1, expr2, expr3, loop)]
 
-    def visitDowhile_stm(self, ctx: BKITParser.Dowhile_stmContext):
+    def visitDo_while_stm(self, ctx: BKITParser.Do_while_stmContext):
         varlst = []
         stmlst = []
         if ctx.var_decl():
@@ -309,7 +345,7 @@ class ASTGeneration(BKITVisitor):
 
     def visitExp1(self, ctx: BKITParser.Exp1Context):
         if ctx.getChildCount() == 1:
-            return self.visit(ctx.exp2(0))
+            return self.visit(ctx.exp2())
         else:
             left_exp = self.visit(ctx.getChild(0))
             right_exp = self.visit(ctx.getChild(2))
@@ -318,7 +354,7 @@ class ASTGeneration(BKITVisitor):
 
     def visitExp2(self, ctx: BKITParser.Exp2Context):
         if ctx.getChildCount() == 1:
-            return self.visit(ctx.exp3(0))
+            return self.visit(ctx.exp3())
         else:
             left_exp = self.visit(ctx.getChild(0))
             right_exp = self.visit(ctx.getChild(2))
@@ -327,7 +363,7 @@ class ASTGeneration(BKITVisitor):
 
     def visitExp3(self, ctx: BKITParser.Exp3Context):
         if ctx.getChildCount() == 1:
-            return self.visit(ctx.exp4(0))
+            return self.visit(ctx.exp4())
         else:
             left_exp = self.visit(ctx.getChild(0))
             right_exp = self.visit(ctx.getChild(2))
