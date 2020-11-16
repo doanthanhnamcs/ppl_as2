@@ -2,6 +2,6 @@
             Function: alias
             Parameter: a,b
             Body:
-                a= b[0xff][0o22] + 4;
+                a= b[0xFF][0o22] + 4;
             EndBody.
         

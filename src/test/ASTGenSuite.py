@@ -27,7 +27,7 @@ class ASTGenSuite(unittest.TestCase):
         """
         expect=Program([VarDecl(Id('x'),[2,3,4],BooleanLiteral(True))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 3))
-    
+
     def test_04(self):
         """Test Complex """
         input = """
@@ -53,7 +53,7 @@ class ASTGenSuite(unittest.TestCase):
             Var: t;
         """
         expect=Program([VarDecl(Id('x'),[],None),VarDecl(Id('y'),[],None),VarDecl(Id('z'),[],None),VarDecl(Id('t'),[],None)])
-        self.assertTrue(TestAST.checkASTGen(input, expect, 6))  
+        self.assertTrue(TestAST.checkASTGen(input, expect, 6))
 
     def test_07(self):
         """Test simple FuncDecl """
@@ -100,7 +100,7 @@ class ASTGenSuite(unittest.TestCase):
         """
         expect=Program([FuncDecl(Id('nam'),[VarDecl(Id('m'),[],None),VarDecl(Id('n'),[],None)],([VarDecl(Id('hello'),[],IntLiteral(5))],[Return(None)]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 10))
-    
+
     def test_11(self):
         """Test simple FuncDecl """
         input = """
@@ -123,7 +123,7 @@ class ASTGenSuite(unittest.TestCase):
         """
         expect=Program([FuncDecl(Id('a_Nam123456'),[VarDecl(Id('m'),[2,3],None),VarDecl(Id('n'),[6,9,8],None)],([VarDecl(Id('x'),[],IntLiteral(255)),VarDecl(Id('y'),[],IntLiteral(255)),VarDecl(Id('z'),[],IntLiteral(18))],[]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 12))
-    
+
     def test_13(self):
         """Test simple FuncDecl """
         input = """
@@ -136,7 +136,7 @@ class ASTGenSuite(unittest.TestCase):
         """
         expect=Program([FuncDecl(Id('thanhnam_1813130'),[VarDecl(Id('m'),[2,3],None),VarDecl(Id('n'),[6,9,8],None)],([VarDecl(Id('x'),[1],ArrayLiteral([IntLiteral(1),IntLiteral(2),IntLiteral(3)])),VarDecl(Id('y'),[],StringLiteral('$%^%$^$'))],[]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 13))
-    
+
     def test_14(self):
         """Test FuncDecl with assign_stm """
         input = """
@@ -183,7 +183,7 @@ class ASTGenSuite(unittest.TestCase):
         EndBody.
             
         """
-                
+
         expect=Program([FuncDecl(Id('sort'),[VarDecl(Id('arr'),[64],None),VarDecl(Id('left'),[],None),VarDecl(Id('right'),[],None)],([],[For(Id('i'),BinaryOp('+',Id('left'),IntLiteral(1)),BinaryOp('<=',Id('i'),Id('right')),IntLiteral(1),([VarDecl(Id('temp'),[],None),VarDecl(Id('j'),[],None)],[Assign(Id('temp'),ArrayCell(Id('arr'),[Id('i')])),Assign(Id('j'),BinaryOp('-',Id('i'),IntLiteral(1))),While(BinaryOp('&&',BinaryOp('>=',Id('j'),Id('left')),BinaryOp('>',ArrayCell(Id('arr'),[Id('j')]),Id('temp'))),([],[Assign(ArrayCell(Id('arr'),[BinaryOp('+',Id('j'),IntLiteral(1))]),ArrayCell(Id('arr'),[Id('j')])),Assign(Id('j'),BinaryOp('-',Id('j'),IntLiteral(1)))])),Assign(ArrayCell(Id('arr'),[BinaryOp('+',Id('j'),IntLiteral(1))]),Id('temp'))]))]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 16))
 
@@ -910,10 +910,10 @@ class ASTGenSuite(unittest.TestCase):
             Function: alias
             Parameter: a,b
             Body:
-                a= b[0xff][0o22] + 4;
+                a= b[0xFF][0o22] + 4;
             EndBody.
         """
-        expect=''
+        expect=Program([FuncDecl(Id('alias'),[VarDecl(Id('a'),[],None),VarDecl(Id('b'),[],None)],([],[Assign(Id('a'),BinaryOp('+',ArrayCell(Id('b'),[IntLiteral(255),IntLiteral(18)]),IntLiteral(4)))]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 66))
     def test_67(self):
         """Test Complex """
@@ -1088,7 +1088,7 @@ class ASTGenSuite(unittest.TestCase):
     def test_76(self):
         """Test Complex """
         input = """
-            Var : x[0xabc];
+            Var : x[0xFF];
             Function: wjbu
             Body:
                 print("************");
@@ -1096,7 +1096,7 @@ class ASTGenSuite(unittest.TestCase):
                 print("************");
             EndBody.
         """
-        expect=Program([VarDecl(Id('x'),[0],None),FuncDecl(Id('wjbu'),[],([],[CallStmt(Id('print'),[StringLiteral('************')]),CallStmt(Id('print'),[StringLiteral('*    OoO   *')]),CallStmt(Id('print'),[StringLiteral('************')])]))])
+        expect=Program([VarDecl(Id('x'),[255],None),FuncDecl(Id('wjbu'),[],([],[CallStmt(Id('print'),[StringLiteral('************')]),CallStmt(Id('print'),[StringLiteral('*    OoO   *')]),CallStmt(Id('print'),[StringLiteral('************')])]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 76))
     def test_77(self):
         """Test Complex """
@@ -1441,7 +1441,7 @@ class ASTGenSuite(unittest.TestCase):
                 If a Then b();  EndIf.
             EndBody.
         """
-        expect=''
+        expect=Program([FuncDecl(Id('nam'),[],([],[If([(Id('a'),[],[CallStmt(Id('b'),[])])],([],[])),If([(Id('a'),[],[CallStmt(Id('b'),[])])],([],[])),If([(Id('a'),[],[CallStmt(Id('b'),[])])],([],[])),If([(Id('a'),[],[CallStmt(Id('b'),[])])],([],[])),If([(Id('a'),[],[CallStmt(Id('b'),[])])],([],[]))]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 94))
     def test_95(self):
         """Test Complex """
@@ -1527,7 +1527,7 @@ class ASTGenSuite(unittest.TestCase):
         """
         expect=Program([VarDecl(Id('x'),[],None),FuncDecl(Id('hello'),[],([],[CallStmt(Id('print'),[StringLiteral('hello,world')])]))])
         self.assertTrue(TestAST.checkASTGen(input, expect, 99))
-    
+
     def test_100(self):
         """Test Complex """
         input = """

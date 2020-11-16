@@ -1,1 +1,1 @@
-Program([VarDecl(Id(x),[0]),FuncDecl(Id(wjbu)[],([][CallStmt(Id(print),[StringLiteral(************)]),CallStmt(Id(print),[StringLiteral(*    OoO   *)]),CallStmt(Id(print),[StringLiteral(************)])]))])
+Program([VarDecl(Id(x),[255]),FuncDecl(Id(wjbu)[],([][CallStmt(Id(print),[StringLiteral(************)]),CallStmt(Id(print),[StringLiteral(*    OoO   *)]),CallStmt(Id(print),[StringLiteral(************)])]))])

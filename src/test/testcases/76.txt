@@ -1,5 +1,5 @@
 
-            Var : x[0xabc];
+            Var : x[0xFF];
             Function: wjbu
             Body:
                 print("************");
