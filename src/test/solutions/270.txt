@@ -1,1 +1,0 @@
-Program([VarDecl(Id(aq),[100]),VarDecl(Id(b),[10,200]),VarDecl(Id(c),[9999]),VarDecl(Id(e),[30]),VarDecl(Id(float),FloatLiteral(10.0))])

@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(whilenotendwhile)[VarDecl(Id(n))],([][While(BooleanLiteral(true),[],[While(BinaryOp(>=,Id(n),IntLiteral(1)),[],[While(BinaryOp(<.,Id(n),FloatLiteral(69.96)),[],[While(BinaryOp(==,BinaryOp(%,Id(n),IntLiteral(3)),IntLiteral(1)),[],[Assign(Id(n),BinaryOp(\,Id(n),IntLiteral(5)))])])])])]))])

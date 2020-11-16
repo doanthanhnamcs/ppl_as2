@@ -1,9 +1,0 @@
-
-        Function: main
-        Body:
-        For (a = 1, a < 10, 2) Do
-        a = 1 + 2 > 3;
-        Break;
-        EndFor.
-        EndBody.
-        

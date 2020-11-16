@@ -1,0 +1,14 @@
+
+            Var: a,b,c,l[0x4332A];
+        Function: nam **#$%#$%#$%#$**
+        Parameter: rapViet,kingOf_rAp
+        Body:
+            Var:html,css=3;
+            While (x == 1) Do
+            If(3<2) Then i=3+2;
+            Else
+            Break;
+            EndIf.
+            EndWhile. 
+        EndBody.
+        

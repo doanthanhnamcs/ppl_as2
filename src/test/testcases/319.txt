@@ -1,6 +1,0 @@
-
-        Function: main
-        Body:
-        Return a[1][2][3];
-        EndBody.
-        

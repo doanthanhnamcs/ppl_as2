@@ -1,0 +1,9 @@
+
+            Var : x[0xabc];
+            Function: wjbu
+            Body:
+                print("************");
+                print("*    OoO   *");
+                print("************");
+            EndBody.
+        

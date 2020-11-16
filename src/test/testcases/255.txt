@@ -1,6 +1,0 @@
-
-        Function:ewq 
-        Parameter: ne
-        Body: 
-            x1 = arr[2-foowqw(3)];
-        EndBody.

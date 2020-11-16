@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(array_null)[],([][Assign(ArrayCell(Id(a),[IntLiteral(12)]),ArrayLiteral()),Assign(ArrayCell(Id(x),[IntLiteral(45)]),ArrayLiteral(ArrayLiteral(ArrayLiteral(ArrayLiteral(ArrayLiteral())))))]))])

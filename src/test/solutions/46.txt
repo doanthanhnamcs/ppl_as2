@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(nAm___)[VarDecl(Id(n),[100]),VarDecl(Id(m),[1000])],([][CallStmt(Id(foo),[BinaryOp(+.,FloatLiteral(2.0),FloatLiteral(4.0)),BinaryOp(*.,IntLiteral(2),IntLiteral(10)),CallExpr(Id(c),[CallExpr(Id(in),[CallExpr(Id(in),[Id(in4)])])])]),Dowhile([],[],BinaryOp(<,Id(x),IntLiteral(3)))]))])

@@ -1,4 +1,0 @@
-Function: whilenullstmt
-        Body:
-            While i < 5 Do EndWhile.
-        EndBody.

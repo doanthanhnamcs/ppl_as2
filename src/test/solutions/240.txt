@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(dwq)[VarDecl(Id(n)),VarDecl(Id(wqe),[10])],([][For(Id(ewqewq),IntLiteral(5),BinaryOp(<,Id(i),IntLiteral(4)),BinaryOp(+,Id(i),IntLiteral(222)),[VarDecl(Id(dsa),IntLiteral(7))],[Assign(Id(a),BinaryOp(+,IntLiteral(4314),IntLiteral(7)))])]))])

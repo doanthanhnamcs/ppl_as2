@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(dsa)[VarDecl(Id(n))],([][If(UnaryOp(!,Id(a)),[],[Assign(Id(b),IntLiteral(33))])ElseIf(BinaryOp(<,Id(c),IntLiteral(32)),[],[Assign(Id(hd),IntLiteral(221))])Else([],[Assign(Id(c),IntLiteral(321))])]))])

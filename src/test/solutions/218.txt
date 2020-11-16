@@ -1,1 +1,0 @@
-Program([VarDecl(Id(t),IntLiteral(0)),FuncDecl(Id(mk)[VarDecl(Id(x))],([VarDecl(Id(x),IntLiteral(5)),VarDecl(Id(y)),VarDecl(Id(z),StringLiteral(Boku no pico the best))][CallStmt(Id(function1),[]),CallStmt(Id(call),[Id(z),Id(x)])]))])

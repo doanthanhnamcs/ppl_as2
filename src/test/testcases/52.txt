@@ -1,0 +1,9 @@
+
+            Function: main
+        **good comment **
+        Body:
+            If(x == (2==1)) =/= 3 Then 
+            x = (4 +. True * "abcy#$@@#$" --.-- (5\foo(2)));
+            EndIf.
+        EndBody.
+        

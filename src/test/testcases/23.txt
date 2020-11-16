@@ -1,0 +1,9 @@
+
+            Function: nam
+        Parameter: x,y,a[20]
+        Body:
+            a=-a;
+            a=1+2;
+            b=!a;
+        EndBody.
+        

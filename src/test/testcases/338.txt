@@ -1,7 +1,0 @@
-
-        Function: **comment chut da**cocomment
-        Body:
-            x=20;
-                x=100.0;
-        EndBody.
-        

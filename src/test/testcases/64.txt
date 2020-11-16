@@ -1,0 +1,6 @@
+
+            Function: index
+        Body:
+            arr(leanhthy + thanhnam[61.2 *. (x + y)])[2] = b[2][3];
+        EndBody.
+        

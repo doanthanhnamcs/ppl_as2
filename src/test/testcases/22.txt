@@ -1,0 +1,8 @@
+
+            Function: nam
+        Parameter: x,y,a[20]
+        Body:
+            While ((x != 2) && (y \ 3)) Do **nothing**
+            EndWhile.
+        EndBody.
+        

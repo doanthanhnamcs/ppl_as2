@@ -1,0 +1,1 @@
+Program([VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c)),FuncDecl(Id(fact)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([VarDecl(Id(sadasd),IntLiteral(4455))][While(BinaryOp(>,Id(x),IntLiteral(3)),[],[If(BooleanLiteral(false),[],[])ElseIf(UnaryOp(!,UnaryOp(!,UnaryOp(!,Id(a)))),[],[])Else([],[For(Id(i),IntLiteral(255),BinaryOp(<,Id(i),IntLiteral(5)),IntLiteral(1),[],[])])])]))])

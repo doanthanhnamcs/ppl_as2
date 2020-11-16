@@ -1,9 +1,0 @@
-Function: varinstmtlist
-        Body:
-            Var: i = 0;
-            Do
-                Var: k = 10;
-                i = i + 1;
-            While i <= 10
-            EndDo.
-        EndBody.

@@ -1,5 +1,0 @@
- Function: emptybody
-        Parameter: var
-        Body:
-        EndBody.
-        

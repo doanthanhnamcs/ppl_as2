@@ -1,7 +1,0 @@
-
-        Function: parameter
-        Parameter: a, b,c[123] ,d[123][234][0]  ,e
-        Body:
-            a=1;
-        EndBody.
-        

@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(factorialOfNumber)[VarDecl(Id(n))],([VarDecl(Id(factorial),IntLiteral(1))][CallStmt(Id(print),[StringLiteral(Enter integer: )]),CallStmt(Id(read),[]),For(Id(i),IntLiteral(0),BinaryOp(<=,Id(i),Id(n)),IntLiteral(1),[],[Assign(Id(factorial),BinaryOp(*,Id(factorial),Id(i)))]),CallStmt(Id(print),[Id(factorial)]),Return(Id(factorial))]))])

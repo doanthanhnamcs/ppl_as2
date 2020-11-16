@@ -1,0 +1,8 @@
+
+            Function: main
+        **good comment **
+        Body:
+            If(x == (2==1)) =/= 3 Then foo(3);
+            EndIf.
+        EndBody.
+        

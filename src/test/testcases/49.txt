@@ -1,0 +1,22 @@
+
+            Var:a,b,c;
+        Function: fact
+        Parameter:x,y,z
+        Body:
+        Var: sad____asd=4455;
+            While(x>3) Do
+                If(False) Then 
+                Return;
+                ElseIf(!!!a) Then
+                Break;
+                Else
+                    For(i=0xFF,i<5,1) Do
+                    **no thing**
+                    Continue;
+                    Break;
+                    Return {1,2,3};
+                    EndFor.
+                EndIf.
+            EndWhile.
+        EndBody.
+        

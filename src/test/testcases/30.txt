@@ -1,0 +1,3 @@
+
+             Var: nam,thy="thy",hello=9;
+        

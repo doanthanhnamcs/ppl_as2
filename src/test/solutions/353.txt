@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(whileinwhile)[VarDecl(Id(x))],([][While(BooleanLiteral(true),[],[While(BinaryOp(>=,Id(x),IntLiteral(0)),[],[Assign(Id(x),BinaryOp(+,Id(x),UnaryOp(-,IntLiteral(1))))]),If(BinaryOp(<,Id(x),IntLiteral(0)),[],[Break()])Else([],[])])]))])

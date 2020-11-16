@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(bat)[VarDecl(Id(n))],([][If(BinaryOp(==,Id(aewq),IntLiteral(5)),[],[Assign(Id(bewq),IntLiteral(5))])Else([],[Assign(Id(cewq),IntLiteral(6))])]))])

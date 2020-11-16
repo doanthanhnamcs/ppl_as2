@@ -1,0 +1,9 @@
+
+            Function: nam
+        Parameter: n
+        Body:
+            For(i=0,i<n,1) Do
+            print(i);
+            EndFor.
+        EndBody.
+        

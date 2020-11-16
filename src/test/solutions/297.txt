@@ -1,1 +1,0 @@
-Program([VarDecl(Id(t),IntLiteral(0)),FuncDecl(Id(mk)[VarDecl(Id(x))],([][CallStmt(Id(call),[]),Assign(Id(dw),IntLiteral(2))]))])

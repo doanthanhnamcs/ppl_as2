@@ -1,4 +1,0 @@
-Function: returnstring
-            Body:
-                Return "String";
-            EndBody.

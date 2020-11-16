@@ -1,7 +1,0 @@
- 
-        Function: df 
-        Parameter: n 
-        Body: 
-            c = !a; 
-        EndBody.
-        

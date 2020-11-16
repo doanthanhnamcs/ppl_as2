@@ -1,0 +1,1 @@
+Program([VarDecl(Id(x),StringLiteral()),VarDecl(Id(y),FloatLiteral(inf)),VarDecl(Id(m),[585]),FuncDecl(Id(nam__t_h_y)[],([][]))])

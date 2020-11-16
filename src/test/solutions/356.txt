@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(whileindowhile)[VarDecl(Id(x))],([][Dowhile([],[While(BinaryOp(<,Id(a),IntLiteral(100)),[],[Assign(Id(a),BinaryOp(-,Id(a),IntLiteral(30)))])],BinaryOp(>,Id(a),IntLiteral(1)))]))])

@@ -1,0 +1,12 @@
+
+            Var: x[3][0xFFFAA];
+        Function: n___Am___hahsdh_
+        Parameter: namngaytho
+        Body:
+            For(i=3+y,i<5,2) Do
+            If(nothing(nothing(nothing(1)))) Then
+            If(nothing(2)) Then EndIf.
+            EndIf.
+            EndFor.
+        EndBody.
+        

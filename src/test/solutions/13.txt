@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(thanhnam_1813130)[VarDecl(Id(m),[2,3]),VarDecl(Id(n),[6,9,8])],([VarDecl(Id(x),[1],ArrayLiteral(IntLiteral(1),IntLiteral(2),IntLiteral(3))),VarDecl(Id(y),StringLiteral($%^%$^$))][]))])

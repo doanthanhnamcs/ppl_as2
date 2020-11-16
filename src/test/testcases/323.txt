@@ -1,7 +1,0 @@
-
-        Function: main
-        Body:
-        a = foo();
-        foo1();
-        EndBody.
-        

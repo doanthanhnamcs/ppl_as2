@@ -1,4 +1,0 @@
-Function: multicallstmt
-        Body:
-            a =-((func1(a)+23) * -func2(4)+arr[3])\. 0.5;
-        EndBody.

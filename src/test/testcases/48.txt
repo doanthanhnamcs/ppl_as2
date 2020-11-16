@@ -1,0 +1,17 @@
+
+            Var:a,b,c;
+        Function: fact
+        Parameter:x,y,z
+        Body:
+        Var: sadasd=4455;
+            While(x>3) Do
+                If(False) Then 
+                ElseIf(!!!a) Then
+                Else
+                    For(i=0xFF,i<5,1) Do
+                    **no thing**
+                    EndFor.
+                EndIf.
+            EndWhile.
+        EndBody.
+        

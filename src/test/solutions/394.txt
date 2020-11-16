@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(print)[VarDecl(Id(n)),VarDecl(Id(x))],([VarDecl(Id(i))][For(Id(i),IntLiteral(0),BinaryOp(<,Id(i),CallExpr(Id(sqrt),[Id(n)])),IntLiteral(2),[],[Assign(Id(x),BinaryOp(+,Id(i),Id(n))),CallStmt(Id(print),[BinaryOp(\,Id(x),IntLiteral(2))])])]))])

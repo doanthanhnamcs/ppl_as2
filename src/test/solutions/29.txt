@@ -1,0 +1,1 @@
+Program([VarDecl(Id(x),IntLiteral(3)),VarDecl(Id(y),[5],ArrayLiteral(StringLiteral(a),FloatLiteral(0.0))),FuncDecl(Id(nam)[VarDecl(Id(k)),VarDecl(Id(m)),VarDecl(Id(n))],([][Assign(ArrayCell(CallExpr(Id(foo),[BinaryOp(+,FloatLiteral(12.5),BooleanLiteral(true))]),[IntLiteral(4)]),StringLiteral(hello))]))])

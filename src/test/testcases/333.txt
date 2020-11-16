@@ -1,3 +1,0 @@
-
-        Var: dsa[432][0X364][0o35721], b = 20.e5, c = "mot con vit xoe ra 2 \n cai canh";
-        

@@ -1,6 +1,0 @@
-
-        Function: main
-        Body:
-        Var: x, y[1][2];
-        EndBody.
-        

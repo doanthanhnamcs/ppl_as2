@@ -1,4 +1,0 @@
-Function: callincall
-        Body:
-            a =func1(foo(3))+23 - func2(goo(foo(a)));
-        EndBody.

@@ -1,10 +1,8 @@
 
             Function: thanhnam_1813130
-           
+            Parameter: m[2][3],n[6][9][8]
             Body:
-            a = foo(2)[0xFF];
-            foo(2); 
-            foo(2)[3] = a[2]+1; 
-            a=foo(2);
+            Var: x[1]={1,2,3};
+            Var: y = "$%^%$^$";
             EndBody.
         

@@ -1,1 +1,0 @@
-Program([VarDecl(Id(z),BooleanLiteral(true)),VarDecl(Id(y),IntLiteral(175))])

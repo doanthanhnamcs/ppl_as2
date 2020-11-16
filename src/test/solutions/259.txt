@@ -1,2 +1,0 @@
-Program([FuncDecl(Id(main)[],([VarDecl(Id(ea),[5,5,9]),VarDecl(Id(be),FloatLiteral(1.55)),VarDecl(Id(ce),IntLiteral(-10))][]))])
-Program([FuncDecl(Id(main)[],([VarDecl(Id(ea),[5,5,9]),VarDecl(Id(be),FloatLiteral(1.55)),VarDecl(Id(ce),IntLiteral(10))][]))])

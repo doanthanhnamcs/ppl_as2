@@ -1,7 +1,0 @@
-
-        Function: main
-        Body:
-        If 1 Then Return ;
-        EndIf.
-        EndBody.
-        

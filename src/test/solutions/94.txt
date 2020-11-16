@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(nam)[],([][If(Id(a),[],[CallStmt(Id(b),[])])Else([],[]),If(Id(a),[],[CallStmt(Id(b),[])])Else([],[]),If(Id(a),[],[CallStmt(Id(b),[])])Else([],[]),If(Id(a),[],[CallStmt(Id(b),[])])Else([],[]),If(Id(a),[],[CallStmt(Id(b),[])])Else([],[])]))])

@@ -1,3 +1,0 @@
-
-        Var: x = {**comment trong array**{34221}, {"fsd\\h" **cmt**},2};
-        

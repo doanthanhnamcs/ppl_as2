@@ -1,7 +1,0 @@
-Function: test
-            Parameter: a,b
-            Body:
-                a = "string 1";
-                b = "string 2";
-                Return a+b;
-            EndBody. 

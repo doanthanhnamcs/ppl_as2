@@ -1,0 +1,9 @@
+
+            Function: nam
+        Parameter: x,y,a[20]
+        Body:
+            y=x*2;
+            foo(5);
+            a[6]=5*foo(4);
+        EndBody.
+        

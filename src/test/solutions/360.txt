@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(break)[],([][For(Id(i),IntLiteral(0),BinaryOp(!=,Id(i),IntLiteral(9)),BinaryOp(*.,Id(i),FloatLiteral(2.0)),[],[If(BinaryOp(>=,Id(i),IntLiteral(10)),[],[Break()])Else([],[])])]))])

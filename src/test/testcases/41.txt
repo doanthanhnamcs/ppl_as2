@@ -1,0 +1,12 @@
+
+            **Var: x="?#!@!$!@$!",y=5,****z=12.6,k={"@#$@#$@dsadjkhasdjkhas"};**
+        Function: noname
+        Parameter: x
+         Body:
+            Return;
+            Return;
+            Return;
+            Return;
+            Return;
+        EndBody.
+        

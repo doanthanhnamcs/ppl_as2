@@ -1,0 +1,22 @@
+
+            Function: main
+        Body:
+            func();
+            Return 0;
+        EndBody.
+        Function: main
+        Body:
+            func();
+            Return 0;
+        EndBody.
+        Function: main
+        Body:
+            func();
+            Return 0;
+        EndBody.
+        Function: main
+        Body:
+            func();
+            Return 0;
+        EndBody.
+        

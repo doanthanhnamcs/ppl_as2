@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(foo)[VarDecl(Id(n))],([][Assign(Id(a),UnaryOp(-,IntLiteral(3))),Assign(Id(b),UnaryOp(-,IntLiteral(291))),Assign(Id(c),UnaryOp(-,IntLiteral(63))),Assign(Id(d),UnaryOp(-,Id(a))),Assign(Id(c),UnaryOp(-,CallExpr(Id(foo),[Id(x)])))]))])

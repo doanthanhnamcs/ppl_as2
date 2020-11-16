@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(returnboolean)[],([][If(BinaryOp(==,Id(str),StringLiteral(Chung Xon)),[],[Return(BooleanLiteral(true))])Else([],[Return(BooleanLiteral(false))])]))])

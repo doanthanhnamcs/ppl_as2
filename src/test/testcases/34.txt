@@ -1,0 +1,8 @@
+
+            Var : a,b,c={{1,2,3},{3,4,"String never die"}};
+        Function: main
+        Body:
+            Return;
+            Return foo(3-.fooooo("abc"));
+        EndBody.
+        

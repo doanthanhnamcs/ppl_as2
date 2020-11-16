@@ -1,9 +1,0 @@
-
-            Function: returnboolean
-            Body:
-            If str == "Chung Xon" Then
-                Return True;
-            Else
-                Return False;
-                EndIf.
-            EndBody.

@@ -1,9 +1,0 @@
-
-        Function: main
-        Body:
-        While 1 Do
-        Continue;
-        Return 1;
-        EndWhile.
-        EndBody.
-        

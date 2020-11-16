@@ -1,0 +1,1 @@
+Program([VarDecl(Id(x),[3,1048490]),FuncDecl(Id(n___Am___hahsdh_)[VarDecl(Id(namngaytho))],([][For(Id(i),BinaryOp(+,IntLiteral(3),Id(y)),BinaryOp(<,Id(i),IntLiteral(5)),IntLiteral(2),[],[If(CallExpr(Id(nothing),[CallExpr(Id(nothing),[CallExpr(Id(nothing),[IntLiteral(1)])])]),[],[If(CallExpr(Id(nothing),[IntLiteral(2)]),[],[])Else([],[])])Else([],[])])]))])

@@ -1,0 +1,10 @@
+
+            Function:main
+        Body:
+        Var: i = 5;
+        While(i>0) Do
+        print(print(print(i)));
+        Continue;
+        EndWhile.
+        EndBody.
+        

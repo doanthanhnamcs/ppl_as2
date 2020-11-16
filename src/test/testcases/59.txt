@@ -1,0 +1,8 @@
+
+            Function: array_null
+        Body:
+            a[12] = {  };
+            x[45]={{{{{}}}}};
+
+        EndBody.
+        

@@ -1,0 +1,15 @@
+
+            Var : x = 3, y = 12.e004;
+        Function: main
+        Body:
+        **** 
+        EndBody.
+        Function: main
+        Body:
+        **a=b;** 
+        EndBody.
+        Function: main_1
+        Body:
+         a=b; 
+        EndBody.
+        

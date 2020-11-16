@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(forinfor)[VarDecl(Id(row)),VarDecl(Id(col)),VarDecl(Id(sum)),VarDecl(Id(arr),[5,9])],([VarDecl(Id(sum),IntLiteral(0))][For(Id(i),IntLiteral(0),BinaryOp(<=,Id(i),Id(row)),IntLiteral(1),[],[For(Id(j),IntLiteral(0),BinaryOp(<,Id(j),Id(col)),IntLiteral(2),[],[Assign(Id(sum),BinaryOp(+,Id(sum),ArrayCell(Id(arr),[Id(i),Id(j)])))])])]))])

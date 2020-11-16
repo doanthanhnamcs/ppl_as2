@@ -1,6 +1,0 @@
-Function: callstmt
-        Parameter: x,y
-        Body:
-            foo(2 + x, 4. \. y);
-            goo();
-        EndBody.

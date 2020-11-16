@@ -1,0 +1,8 @@
+
+            Var:x;
+            Function:bye
+            Body:
+            print("hello,world");
+            print("goodbye,world");
+            EndBody.
+        

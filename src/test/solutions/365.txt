@@ -1,1 +1,0 @@
-Program([VarDecl(Id(callnotinfunction)),FuncDecl(Id(a)[],([][CallStmt(Id(goo),[Id(x),BinaryOp(*,Id(y),IntLiteral(2)),BinaryOp(+,Id(z),FloatLiteral(3.00000003))])]))])

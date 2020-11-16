@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(varinstmtlist)[],([VarDecl(Id(i),IntLiteral(0))][Dowhile([VarDecl(Id(k),IntLiteral(10))],[Assign(Id(i),BinaryOp(+,Id(i),IntLiteral(1)))],BinaryOp(<=,Id(i),IntLiteral(10)))]))])

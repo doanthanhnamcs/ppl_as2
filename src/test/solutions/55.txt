@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(fact)[VarDecl(Id(x)),VarDecl(Id(a),[2])],([][For(Id(i),IntLiteral(0),BinaryOp(<,Id(i),IntLiteral(10)),IntLiteral(2),[],[If(Id(x),[],[Break()])Else([],[])]),If(Id(x),[],[Break()])Else([],[])]))])

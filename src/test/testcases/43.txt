@@ -1,0 +1,10 @@
+
+            Var: x = "%%%%%%%%%", y = 6 , m[0o1111] = 1e9999;
+        Function: mainSDADASD12312132
+         Body:
+         Var:x,y,z;
+         While(!!!!6=/=9)
+         Do print(print(print(in(in(i)))));
+         EndWhile.
+        EndBody.
+        

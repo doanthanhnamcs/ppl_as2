@@ -1,1 +1,0 @@
-Program([VarDecl(Id(t),IntLiteral(0)),FuncDecl(Id(mk)[VarDecl(Id(x))],([][Dowhile([],[CallStmt(Id(fire),[ArrayCell(Id(bomb),[BinaryOp(+,BinaryOp(+,CallExpr(Id(psn),[]),CallExpr(Id(par),[])),CallExpr(Id(brn),[]))])])],BinaryOp(>,Id(hp),IntLiteral(5)))]))])

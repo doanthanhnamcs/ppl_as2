@@ -1,0 +1,9 @@
+
+            Function: nam
+        Parameter: n
+        Body:
+            If((n % 2) == 0) Then print("even");
+            Else print("odd");
+            EndIf.
+        EndBody.
+        

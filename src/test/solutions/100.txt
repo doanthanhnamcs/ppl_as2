@@ -1,0 +1,1 @@
+Program([VarDecl(Id(x)),FuncDecl(Id(bye)[],([][CallStmt(Id(print),[StringLiteral(hello,world)]),CallStmt(Id(print),[StringLiteral(goodbye,world)])]))])

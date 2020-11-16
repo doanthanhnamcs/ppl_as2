@@ -1,6 +1,0 @@
-
-        Function: main
-        Parameter: n, m[10]
-        Body:
-        EndBody.
-        

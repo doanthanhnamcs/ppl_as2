@@ -1,2 +1,0 @@
-Function: a Parameter: a Body: Var: a=False;EndBody. Function: b Body: EndBody.
-Function: d**Here some too**Parameter: d Body: EndBody.

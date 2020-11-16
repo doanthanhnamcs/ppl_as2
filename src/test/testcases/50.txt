@@ -1,0 +1,13 @@
+
+            Var:a__11_22[3]={1,2,"#@$@#$2"};
+        Function: fact_1
+        
+        Parameter:f,f,f,f,f
+        Body:
+        If "**hello**" Then
+        inxxx= 128983 - 4234 +. 43223.55e+4 || !!!!False;
+        inpa231 = {123, 435, 423} * in;
+        EndIf.
+            
+        EndBody.
+        

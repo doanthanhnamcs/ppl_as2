@@ -1,1 +1,0 @@
-Program([VarDecl(Id(decimal),[108]),VarDecl(Id(hexadecimal),[345450,8287]),VarDecl(Id(octdecimal),[136845,83]),VarDecl(Id(array),[5,13456])])

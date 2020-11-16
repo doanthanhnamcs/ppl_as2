@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(foo)[VarDecl(Id(n))],([][Dowhile([],[Assign(Id(x),BinaryOp(+,Id(a),Id(b))),CallStmt(Id(writeln),[Id(x)])],BinaryOp(||,BinaryOp(||,BinaryOp(||,BooleanLiteral(true),BooleanLiteral(false)),BooleanLiteral(true)),BinaryOp(>,Id(a),Id(b))))]))])

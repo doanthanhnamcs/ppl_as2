@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(main)[],([][If(IntLiteral(1),[],[Return()])Else([],[])]))])

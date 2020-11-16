@@ -1,9 +1,0 @@
-
-        Function: main
-        Body:
-        Do
-        foo();
-        Return;
-        While 1 EndDo.
-        EndBody.
-        

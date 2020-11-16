@@ -1,4 +1,0 @@
-Function: index
-        Body:
-            arr(a + bbb[61.2 *. (x + y)])[2] = b[2][3];
-        EndBody.

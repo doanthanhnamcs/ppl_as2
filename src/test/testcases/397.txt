@@ -1,6 +1,0 @@
-Function: printchar
-        Body:
-            For (a = 1, a <= len(str),1 ) Do
-                writeln(str[a]);
-            EndFor.
-        EndBody.

@@ -1,5 +1,0 @@
-
-        Function: main
-        Body:
-            While True Do print("Hello World"); EndWhile.
-        EndBody.

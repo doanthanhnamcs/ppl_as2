@@ -1,0 +1,9 @@
+
+             Function: nam
+        Body:
+            For(a9=0xFFFF,b<5,d+.3e4) Do
+            foo(4+.5*.r*.r);
+            Return (!x);
+            EndFor.
+        EndBody.
+        

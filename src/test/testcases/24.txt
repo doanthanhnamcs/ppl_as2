@@ -1,0 +1,16 @@
+
+            Function: nam
+        Parameter: x,y,a[20]
+        Body:
+            If(abcxyz == them) Then
+                For(i=2,i<9,a+2) Do
+                x=x+y;
+                EndFor.
+            ElseIf (True) Then
+                **do nothing**
+            Else 
+            a=b+d;
+            foo(2);
+            EndIf.
+        EndBody.
+        

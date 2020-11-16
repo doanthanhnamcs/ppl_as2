@@ -1,9 +1,0 @@
-
-        Var: t = 0;
-        Function: mk
-        Parameter: x    
-        Body:
-            Var: t[3], b[5][6] = {}, r;
-            Return b;
-        EndBody.
-        

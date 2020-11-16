@@ -1,7 +1,0 @@
-Function: ee
-                        Parameter: xw
-                        Body:
-                            For (i = 1, i <= wex*x*x,i + x ) Do
-                                writeln(i);
-                            EndFor.
-                        EndBody.

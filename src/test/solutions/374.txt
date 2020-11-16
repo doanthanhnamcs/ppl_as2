@@ -1,1 +1,0 @@
-Program([VarDecl(Id(stringinarray)),VarDecl(Id(x),[123],ArrayLiteral(StringLiteral(STRING),StringLiteral(aRraY1),StringLiteral(Array2)))])

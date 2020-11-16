@@ -1,6 +1,0 @@
- Function: if
-        Body:
-            If x==i Then Break;
-            EndIf.
-        EndBody.
-        

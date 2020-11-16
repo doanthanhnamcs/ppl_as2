@@ -1,0 +1,7 @@
+
+            Var:x;
+            Function:hello
+            Body:
+            print("hello,world");
+            EndBody.
+        

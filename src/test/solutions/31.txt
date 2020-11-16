@@ -1,0 +1,1 @@
+Program([VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c)),VarDecl(Id(l),[275242]),FuncDecl(Id(nam)[VarDecl(Id(rapViet)),VarDecl(Id(kingOf_rAp))],([VarDecl(Id(html)),VarDecl(Id(css),IntLiteral(3))][While(BinaryOp(==,Id(x),IntLiteral(1)),[],[If(BinaryOp(<,IntLiteral(3),IntLiteral(2)),[],[Assign(Id(i),BinaryOp(+,IntLiteral(3),IntLiteral(2)))])Else([],[Break()])])]))])

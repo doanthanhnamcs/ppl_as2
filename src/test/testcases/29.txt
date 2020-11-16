@@ -1,0 +1,8 @@
+
+            Var: x=3,y[5]={"a",0e4};
+        Function: nam
+        Parameter: k,m,n
+        Body:
+            foo(12.5+True)[4] = "hello";
+        EndBody.
+        

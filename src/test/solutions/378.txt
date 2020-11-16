@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(multicallstmt)[],([][Assign(Id(a),BinaryOp(\.,UnaryOp(-,BinaryOp(+,BinaryOp(*,BinaryOp(+,CallExpr(Id(func1),[Id(a)]),IntLiteral(23)),UnaryOp(-,CallExpr(Id(func2),[IntLiteral(4)]))),ArrayCell(Id(arr),[IntLiteral(3)]))),FloatLiteral(0.5)))]))])
