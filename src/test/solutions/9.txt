@@ -1,1 +1,0 @@
-Program([FuncDecl(Id(nam)[VarDecl(Id(m)),VarDecl(Id(n))],([VarDecl(Id(hello),IntLiteral(5))][]))])

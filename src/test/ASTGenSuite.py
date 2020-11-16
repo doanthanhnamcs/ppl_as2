@@ -149,8 +149,8 @@ class ASTGenSuite(unittest.TestCase):
     #     expect = Program([FuncDecl(Id('nam')[VarDecl(Id('x'),[],None),VarDecl(Id('y'),[],None),VarDecl(Id(a),[IntLiteral(20)])],([][Assign(Id(y),BinaryOp(*,Id(x),IntLiteral(2)))]))])
     #     self.assertTrue(TestAST.checkASTGen(input, expect, 14))
 
-    def test_13(self):
-        """Test simple FuncDecl """
+    def test_15(self):
+        """Test Complex FuncDecl """
         input = """
             Function: thanhnam_1813130
            
@@ -161,5 +161,66 @@ class ASTGenSuite(unittest.TestCase):
             a=foo(2);
             EndBody.
         """
-        expect = Program([FuncDecl(Id('thanhnam_1813130'),[VarDecl(Id('m'),[IntLiteral(2),IntLiteral(3)],None),VarDecl(Id('n'),[IntLiteral(6),IntLiteral(9),IntLiteral(8)],None)],([VarDecl(Id('x'),[IntLiteral(1)],ArrayLiteral([IntLiteral(1),IntLiteral(2),IntLiteral(3)])),VarDecl(Id('y'),[],StringLiteral('$%^%$^$'))],[]))])
-        self.assertTrue(TestAST.checkASTGen(input, expect, 13))
+        expect = Program([FuncDecl(Id('thanhnam_1813130'),[],([],[Assign(Id('a'),ArrayCell(CallExpr(Id('foo'),[IntLiteral(2)]),[IntLiteral(255)])),CallStmt(Id('foo'),[IntLiteral(2)]),Assign(ArrayCell(CallExpr(Id('foo'),[IntLiteral(2)]),[IntLiteral(3)]),BinaryOp('+',Id('a'),IntLiteral(1))),Assign(Id('a'),CallExpr(Id('foo'),[IntLiteral(2)]))]))])
+        self.assertTrue(TestAST.checkASTGen(input, expect, 15))
+
+    def test_16(self):
+        """Test Complex FuncDecl """
+        input = """
+            Function: sort
+        Parameter: arr[0o100], left, right
+        Body:
+            For(i = left + 1, i <= right, 1) Do
+                Var: temp, j;
+                temp = arr[i];
+                j = i - 1;
+                While (j >= left) && (arr[j] > temp) Do
+                    arr[j + 1] = arr[j];
+                    j = j - 1;
+                EndWhile.
+                arr[j + 1] = temp;
+            EndFor.
+        EndBody.
+            
+        """
+        expect =  Program([FuncDecl(Id('sort'), [VarDecl(Id('arr'), [0o100], None), VarDecl(Id('left'), [], None), VarDecl(Id('right'), [], None)], ([], [\
+                For(Id('i'), BinaryOp('+', Id('left'), IntLiteral(1)), BinaryOp('<=', Id('i'), Id('right')), IntLiteral(1), ([VarDecl(Id('temp'), [], None), VarDecl(Id('j'), [], None)], \
+                [Assign(Id('temp'), ArrayCell(Id('arr'), [Id('i')])), Assign(Id('j'), BinaryOp('-', Id('i'), IntLiteral(1))),\
+                While(BinaryOp('&&', BinaryOp('>=', Id('j'), Id('left')), BinaryOp('>', ArrayCell(Id('arr'), [Id('j')]), Id('temp'))),([], [Assign(ArrayCell(Id('arr'), [BinaryOp('+', Id('j'), IntLiteral(1))]), ArrayCell(Id('arr'), [Id('j')])), Assign(Id('j'), BinaryOp('-', Id('j'), IntLiteral(1)))])),\
+                Assign(ArrayCell(Id('arr'), [BinaryOp('+', Id('j'), IntLiteral(1))]), Id('temp'))
+                ]))]))])
+        self.assertTrue(TestAST.checkASTGen(input, expect, 16))
+
+    def test_17(self):
+        """Test Complex FuncDecl """
+        input = """
+            Function: main
+        Body:
+            a = f(2, 3 + 4)[10 * 0xFF];
+        EndBody.
+        """
+        expect = Program([FuncDecl(Id('main'), [], ([], [Assign(Id('a'), ArrayCell(CallExpr(Id('f'), [IntLiteral(2), BinaryOp('+', IntLiteral(3), IntLiteral(4))]), [BinaryOp('*', IntLiteral(10), IntLiteral(255))]))]))])
+        self.assertTrue(TestAST.checkASTGen(input, expect, 17))
+
+    def test_18(self):
+        """Test Complex FuncDecl """
+        input = """
+            Function: main
+        Body:
+            **If statement**
+            If a Then b();  Else EndIf.
+        EndBody.
+        """
+        expect = Program([])
+        self.assertTrue(TestAST.checkASTGen(input, expect, 18))
+    def test_19(self):
+        """Test Complex FuncDecl """
+        input = """
+            Function: main
+        Body:
+            **If statement**
+            If a Then  Else EndIf.
+        EndBody.
+        """
+        expect = Program([FuncDecl(Id('main'),[],([],[If(Id(a),[],[])Else([],[])]))])
+        self.assertTrue(TestAST.checkASTGen(input, expect, 19))

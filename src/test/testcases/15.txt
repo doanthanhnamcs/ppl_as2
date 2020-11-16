@@ -1,0 +1,10 @@
+
+            Function: thanhnam_1813130
+           
+            Body:
+            a = foo(2)[0xFF];
+            foo(2); 
+            foo(2)[3] = a+1; 
+            a=foo(2);
+            EndBody.
+        

@@ -1,4 +1,6 @@
 
-            Var: a[2][3]={1,"abc",{},{{}}},b[4]={1,2,{3,4}};
-Var: a,b[4]={1,2,3};
+        Function: main
+        Body:
+            Return 0;
+        EndBody.
         

@@ -50,6 +50,8 @@ class ASTGeneration(BKITVisitor):
     def visitComposit(self, ctx: BKITParser.CompositContext):
         intlist = ctx.INT_LIT()
         lst = []
+        #['1','0xFF','0o77','6']
+        #['1','255','555','6']
         for j in intlist:
             i=j.getText()
             x = i.find('x')
@@ -62,7 +64,7 @@ class ASTGeneration(BKITVisitor):
                 lst += [str(int(i, 8))]
             else:
                 lst += [i]
-        return list(map(lambda x: IntLiteral(int(x)), lst))
+        return list(map(lambda x: int(x), lst))
 
     def visitArray_lit(self, ctx: BKITParser.Array_litContext):
         lst = []
@@ -112,7 +114,7 @@ class ASTGeneration(BKITVisitor):
         elif ctx.FLOAT_LIT():
             return FloatLiteral(float(ctx.FLOAT_LIT().getText()))
         elif ctx.BOOLEAN_LIT():
-            return BooleanLiteral(bool(ctx.BOOLEAN_LIT().getText()))
+            return BooleanLiteral(ctx.BOOLEAN_LIT().getText())
         elif ctx.STRING_LIT():
             return StringLiteral(ctx.STRING_LIT().getText())
         else:
@@ -192,9 +194,11 @@ class ASTGeneration(BKITVisitor):
     def visitElement_exp(self, ctx: BKITParser.Element_expContext):
         if ctx.ID():
             arr = Id(ctx.ID().getText())
-        else:
+        elif ctx.func_call():
             name,lst = self.visit(ctx.func_call())
             arr = CallExpr(name, lst)
+        else:
+            arr = self.visit(ctx.exp())
         idx = self.visit(ctx.index_op())
         return ArrayCell(arr, idx)
 
@@ -231,10 +235,11 @@ class ASTGeneration(BKITVisitor):
         # ifthenStmt:List[Tuple[Expr,List[VarDecl],List[Stmt]]]
         # elseStmt:Tuple[List[VarDecl],List[Stmt]] # for Else branch, empty list if no Else
         ifthenStm += [self.visit(ctx.ifthen_stm())]
+        elseStm=None
         if ctx.else_stm():
             elseStm = self.visit(ctx.else_stm())
         else:
-            elseStm = []
+            elseStm = ([],[])
         if ctx.elif_stm():
             for i in range(len(ctx.elif_stm())):
                 ifthenStm += [self.visit(ctx.elif_stm(i))]
