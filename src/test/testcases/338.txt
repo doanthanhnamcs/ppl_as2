@@ -1,9 +1,7 @@
 
-        Var: s;
-        Function: reverse
-        Parameter: str
+        Function: **comment chut da**cocomment
         Body:
-            For(i = 0, i < len(str) \ 2, s) Do
-                str[i] = str[len(str) - i - 1];
-            EndFor.
+            x=20;
+                x=100.0;
         EndBody.
+        

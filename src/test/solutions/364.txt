@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(callmore)[],([][CallStmt(Id(call),[Id(a),IntLiteral(876),BinaryOp(*.,Id(var),FloatLiteral(6.5)),ArrayCell(Id(arr),[IntLiteral(3)]),BooleanLiteral(true),StringLiteral(chuoi~~\n)])]))])

@@ -1,21 +1,8 @@
 
-        Var: kk = {123, 0x13, 0o13, "dasd", {}};
-        Function: main
+        Function: forinitfail
+        Parameter: n[5]
         Body:
-            While exp == exp() && !error() Do
-                print("kfkfkf" * 4);
-                If cond() Then
-                    process();
-                    log();
-                    Break;
-                ElseIf k Then
-                    handle();
-                    error();
-                    log();
-                Else
-                    log();
-                    close();
-                    finish();
-                EndIf.
-            EndWhile. 
+            For (i = 0, i < 10, 1) Do
+                n[i]=n+i;
+            EndFor.
         EndBody.

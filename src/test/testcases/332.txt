@@ -1,11 +1,4 @@
 
-        Function: main
-        Body:
-            If "" Then
-                If 1 Then
-                    inp = f23 + ads[2+10] --- 2 *f ** "87235jkfgshgsfg $&^# ** ;
-                ElseIf 1 Then 
-                EndIf.
-            EndIf.
-        EndBody.
+        Var: decimal[108], hexadecimal[0X5456A][0x205F], octdecimal[0o413215][0O123];
+        Var: array[5][13456];
         

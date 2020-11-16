@@ -1,16 +1,12 @@
-
-        Var: arr[100];
-        Var: x;
-        Function: binary_search
-        Parameter: low, high
+Function: octalToDecimal
+        Parameter: octalNumber
         Body:
-            Var: mid;
-            If low > high Then Return False; EndIf.
-            mid = (low + high) \ 2;
-            If (arr[mid] == x) Then Return False; EndIf.
-            If (arr[mid] < x) Then
-                Return binary_search(mid + 1, high);
-            Else
-                Return binary_search(low, mid - 1);
-            EndIf.
-        EndBody.
+        Var: decimalNumber = 0, i = 0, rem;
+        While (octalNumber != 0) Do
+            rem = octalNumber % 10;
+            octalNumber =octalNumber \ 10;
+            decimalNumber =decimalNumber  + rem * pow(8,i);
+            i=i+1;
+        EndWhile.
+    Return decimalNumber;
+    EndBody.

@@ -1,11 +1,13 @@
+Function: iffull
 
-        Function: fn
+
+        Parameter: themdauchamphay
         Body:
-            f(f(2 + 2));
-            If i == 0 Then
-                If True Then
-                    If t Then ElseIf con Then ElseIf con Then Else EndIf.
-                EndIf.
+            If n == 0 Then
+                Return 1;
+            ElseIf (n>0) Then
+                Return n * fact (n - 1);
+            Else
+                Return n;
             EndIf.
         EndBody.
-        

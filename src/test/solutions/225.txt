@@ -1,0 +1,1 @@
+Program([VarDecl(Id(t),IntLiteral(0)),FuncDecl(Id(mk)[VarDecl(Id(x))],([][CallStmt(Id(fun0),[CallExpr(Id(fun1),[CallExpr(Id(fun2),[CallExpr(Id(fun3),[CallExpr(Id(fun4),[StringLiteral(end here)])])])])])]))])

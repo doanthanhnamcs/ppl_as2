@@ -1,13 +1,6 @@
-
-        Function: test
+Function: arrayinarray
+                Parameter: x[2][3]
         Body:
-            For(i = 0, i < max, 1) Do
-                If is_upper(s[i]) Then
-                    d["upper"] = d["upper"] + 1;
-                ElseIf is_lower(get(s, i)) Then
-                    d["lower"] = d["lower"] + 1;
-                Else
-                    Continue;
-                EndIf.
-            EndFor.
+            Var: i = 0;
+            x[2][3]={{867,345,987},{76,12,744}};
         EndBody.

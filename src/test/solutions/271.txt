@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(bar)[VarDecl(Id(n))],([][Assign(Id(a),BinaryOp(!=,BinaryOp(==,Id(a),Id(b)),Id(c))),Assign(Id(x),BinaryOp(<.,BinaryOp(=/=,Id(x),Id(y)),Id(z)))]))])

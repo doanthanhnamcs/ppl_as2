@@ -1,8 +1,3 @@
-
-        Function: test
-        Parameter: str
-        Body:
-            l = split(str, " ");
-            If !l Then print("empty string"); EndIf.
-            Return array(l);
+Function: complexarray
+            Body: x[123]={"duwat73\r \t", "@#&\n rwFEW54",54312,10.e13, 0.123, 543.0e-6  ,{"xe mau xanh"},"xe mau do"};
         EndBody.

@@ -1,7 +1,7 @@
 
-        Function: main
-        Parameter: arr
+        Function: parameter
+        Parameter: a, b,c[123] ,d[123][234][0]  ,e
         Body:
-            print(1 + 2, 0x22)[f()[2][3+arr[3]]] = arr[2 * f()[f()]];
+            a=1;
         EndBody.
         

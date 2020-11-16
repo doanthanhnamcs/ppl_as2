@@ -1,12 +1,7 @@
-Var:x;
-        Function: test
+
+        Function: abc
+        Parameter: global_var
         Body:
-            f = -1234.;
-            Do 
-                Do
-                    If k Then If k Then EndIf. EndIf.
-                While False
-                EndDo.
-            While f < 10
-            EndDo.
+            dayLA1_teNbIen = 25+6-.2.5%3\100 ;
         EndBody.
+        

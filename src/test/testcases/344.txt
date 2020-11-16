@@ -1,13 +1,9 @@
-Var: x;
-        Function: test
+Function: varinstmtlist
         Body:
-            While True Do
-                v = receive(socket, max_len);
-                If v Then
-                    handle();
-                Else
-                    raise(error("failed"));
-                EndIf.
-            EndWhile.
+            Var: i = 0;
+            Do
+                Var: k = 10;
+                i = i + 1;
+            While i <= 10
+            EndDo.
         EndBody.
-        

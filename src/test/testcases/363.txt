@@ -1,20 +1,6 @@
-
-        Var: x;
-        Var: arr[123] = {1, 2, 3, 5, "dasd", {12, {12}}};
-        Function: test
-        Parameter: array
+Function: callstmt
+        Parameter: x,y
         Body:
-            While array Do
-                If arr Then
-                    For(i = 0, i < length(arr), step()) Do
-                        print(arr[i] * kk);
-                    EndFor.
-                    If True && (123 == 3123) Then
-                        do();
-                        Break;
-                    EndIf.
-                EndIf.
-            EndWhile.
-            Return;
+            foo(2 + x, 4. \. y);
+            goo();
         EndBody.
-        

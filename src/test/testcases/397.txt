@@ -1,5 +1,6 @@
-Var: t;
-        Function: t__Ddas
+Function: printchar
         Body:
-            x = 2 -. 3 -. 4 + 123 + ((f() == 23) || 123) * 24 % (2 == 22);
+            For (a = 1, a <= len(str),1 ) Do
+                writeln(str[a]);
+            EndFor.
         EndBody.

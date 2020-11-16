@@ -1,8 +1,10 @@
 
-        Function: t__________________________
-        Body:
-            Var: y;
-            k = 120;
-            x[12] = 123;
-            x = {1, 2, 3, 4, {4, 5}, {{{{{}}}}}};
-        EndBody.
+            Function: print
+            Parameter: n,x
+            Body:
+                Var: i;
+                For (i = 0, i < sqrt(n), 2) Do
+                    x = i + n;
+                    print(x\2);
+                EndFor.
+            EndBody.

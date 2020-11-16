@@ -1,13 +1,5 @@
 
-        Var:x ;
-        Var: f = 1232324.e23432;
-        Function: main
-        Parameter: a[2], b
-        Body:
-            While i < 10 Do
-                While i < 10 Do
-                    For (i = init(), con(), up()) Do
-                    EndFor.
-                EndWhile.
-            EndWhile.
-        EndBody.
+        Var **COMMENT**: ****id = 465632
+        **dsfhfsdhjnc^#%#@@~!**;
+    Var: sss;
+        

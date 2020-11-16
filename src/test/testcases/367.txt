@@ -1,9 +1,8 @@
-
-        Function: swap
-        Parameter: a, b
+Function: testreturn
+        Parameter: n
         Body:
-            Var: temp;
-            temp = a;
-            a = b;
-            b = temp;
+            Var: t=False;
+            If n<100 Then t=True;
+            EndIf.
+            Return t;
         EndBody.

@@ -1,10 +1,11 @@
-
-        Function: testttt
+Function: mix
         Body:
-            For(iter = 0, iter < max_iter, 1) Do
-                If do_some_thing() == end Then
-                    Return;
-                EndIf.
-                Continue; 
-            EndFor.
+            While x>1 Do
+                For (i = 100,True, i-1) Do
+                    If a<3 Then
+                        Break;
+                    EndIf.
+                    a = a -1;
+                EndFor.
+            EndWhile.
         EndBody.

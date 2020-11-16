@@ -1,11 +1,5 @@
 
-        Function: print
-        Parameter: i
+        Function: funccallfail
         Body:
-            print(i);
+        foo=a+2;
         EndBody.
-        Function: main
-        Body:
-            print(i);
-        EndBody.
-        

@@ -1,12 +1,7 @@
-
-        Function: test
+Function: notexpr
+        Parameter: n
         Body:
-            If n == 0 Then
-                Return n;
-            Else
-                If test > 0 Then
-                    print("akakakak");
-                EndIf.
-                Return n % 10 + test(n \ 10);
-            EndIf.
+            Do
+                Return 1;
+            While a =/= 2.2 EndDo.
         EndBody.

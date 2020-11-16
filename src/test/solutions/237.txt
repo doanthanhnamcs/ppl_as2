@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(bar)[VarDecl(Id(n))],([][If(UnaryOp(!,Id(a)),[],[Assign(Id(b),IntLiteral(5))])Else([],[])]))])

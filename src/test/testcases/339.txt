@@ -1,12 +1,6 @@
-
-        Var: ar[0x13][0o2][23];
-        Function: ppl
-        Parameter: threshold
+ Function: if
         Body:
-            If score >= threshold Then
-                Return "Pass";
-            Else
-                Return "Again";
+            If x==i Then Break;
             EndIf.
-            Return ppl;
         EndBody.
+        

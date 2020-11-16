@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(ccd)[VarDecl(Id(n))],([][For(Id(k),IntLiteral(4),BinaryOp(<,Id(k),IntLiteral(2)),IntLiteral(3),[],[Assign(Id(x),IntLiteral(6))]),For(Id(i),IntLiteral(0),BinaryOp(!=,Id(i),IntLiteral(5)),BinaryOp(*,Id(i),IntLiteral(1)),[],[Assign(Id(x),IntLiteral(6))])]))])

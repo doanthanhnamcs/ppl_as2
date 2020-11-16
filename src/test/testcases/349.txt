@@ -1,10 +1,11 @@
 
-        Function: test
-        Parameter: a, b[10][0o12][0x43]
+        Function: forinfor
+        Parameter: row,col,sum,arr[5][9]
         Body:
-            a[2 + f()[12] * ((adr[0o23] >=. d) -. 32)] = kh;
-            flag = -. True && !f(2) % 2 || f == 32;
-            While cond()[123][0x312][0o32] Do
-                print("dasd");
-            EndWhile.
+            Var: sum=0;
+            For( i=0,i<=row,1) Do
+                For(j=0,j<col,2) Do
+                    sum=sum+arr[i][j];
+                EndFor.
+            EndFor.
         EndBody.

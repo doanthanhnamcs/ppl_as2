@@ -1,10 +1,6 @@
-
-        Function: test
+Function: array
+        Parameter: x[123]
         Body:
-            For(i = 0, i < max, i) Do
-                If (i % 7 == 0) && (i % 5 != 0) Then
-                    arr = arr + {1};
-                EndIf.
-            EndFor.
-            print(join("", arr));
+            Var: i = 0;
+            x[123]={996,712,216};
         EndBody.

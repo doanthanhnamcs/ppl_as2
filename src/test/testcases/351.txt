@@ -1,7 +1,11 @@
-
-        Function: test
+Function: whileandif
         Body:
-            Var: k;
-            k = "13" + "das";
-            k = k && 31 - 13 * (k == 0) || dask;
+            Var: x=20;
+            While True Do
+                If x==0 Then Break;
+                ElseIf x%2==0 Then
+                    x=x\2;
+                Else writeln(x);
+                EndIf.
+            EndWhile.
         EndBody.

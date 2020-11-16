@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(testdowhile)[VarDecl(Id(x)),VarDecl(Id(a)),VarDecl(Id(b))],([][Dowhile([],[Assign(Id(x),BinaryOp(+,Id(a),Id(b)))],BinaryOp(<,Id(x),FloatLiteral(100000000.0)))]))])

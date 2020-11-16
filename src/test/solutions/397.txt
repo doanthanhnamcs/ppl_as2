@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(printchar)[],([][For(Id(a),IntLiteral(1),BinaryOp(<=,Id(a),CallExpr(Id(len),[Id(str)])),IntLiteral(1),[],[CallStmt(Id(writeln),[ArrayCell(Id(str),[Id(a)])])])]))])

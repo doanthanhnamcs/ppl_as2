@@ -1,7 +1,8 @@
-
-        Function: test
+Function: continue
         Body:
-            Var: flag;
-            flag = (True != 123) + !3 * (False && kj % 123 <. f());
-            praaa(--------.-.-(!123 == kk * 12 - 3)||False + !!!!!!9==4);
+            For (i=0, i!=9, i) Do
+                If i==10 Then Continue;
+                EndIf.
+                foo();
+            EndFor.
         EndBody.

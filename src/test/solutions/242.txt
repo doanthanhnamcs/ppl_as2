@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(poverty)[VarDecl(Id(n))],([][Assign(Id(xee),IntLiteral(10)),CallStmt(Id(fact),[Id(xee)])]))])

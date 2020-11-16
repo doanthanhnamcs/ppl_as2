@@ -1,8 +1,5 @@
 
-        Function: ooooo
+        Function: main
         Body:
-            While !compile() Do EndWhile.
-            While !linker() Do EndWhile.
-            If flag Then loader(); Else fail(); EndIf.
-            Return runner();
+            While True Do print("Hello World"); EndWhile.
         EndBody.

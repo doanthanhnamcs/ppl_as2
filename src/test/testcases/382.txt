@@ -1,5 +1,9 @@
-
-        Function: test
+Function: mmmmm
         Body:
-            Return "dasd" * asd  - {1,2,3} || 82 == False;
+            Do
+                While(1) Do
+                foo (2 + x, 4. \. y);goo ();
+            EndWhile.
+            While(1)
+            EndDo.
         EndBody.

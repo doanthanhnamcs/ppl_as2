@@ -1,10 +1,8 @@
-
-        Var: x, y, z, t;
-        Function: test___
+Function: ifOKE
         Body:
-            Var: a, b, c;
-            Var: ksd[123][0x10][0o231340];
-            Var: s = "132";
-            Var: f = 0x13, sd = 123, s = "ad", k = 0.123, u = {1, 2, 4, 5, 6};
+            If n == 0 Then
+                x = 3;
+            ElseIf x != 2 Then
+                check = False;
+            EndIf.
         EndBody.
-        

@@ -1,9 +1,13 @@
-
-        Function: is_even
-        Parameter: x
+Function: foo
+        Parameter: n
         Body:
-            If x && 1 == 0 Then
-                Return True;
-            EndIf.
-            Return False;
+            Var: i = 0;
+            While i!=423 Do
+                fact (i);
+                i = i + 3; **cmt**
+                If i==212 Then Break;
+                a = (!(b && c)||!(a&&b));
+                EndIf.
+            EndWhile.
         EndBody.
+        

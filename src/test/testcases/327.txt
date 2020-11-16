@@ -1,6 +1,10 @@
 
         Function: main
         Body:
-           x =  f("1", "194") + a[0][3] * "blu bla";
+        If 1 Then Return ;
+        ElseIf 2 Then a=1;
+        Else
+        Break;
+        EndIf.
         EndBody.
         

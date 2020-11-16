@@ -1,12 +1,4 @@
-
-        Function: test
+Function: callwithoutsemi
         Body:
-            For(i = 0, i < 100, up()) Do
-                If i % 2 == 0 Then
-                    Break;
-                    Continue;
-                ElseIf i > 10 Then
-                    w(i);
-                EndIf.
-            EndFor.
+            iden__TI_FIerOf_Function(a,b_,c+.3.e-2);
         EndBody.

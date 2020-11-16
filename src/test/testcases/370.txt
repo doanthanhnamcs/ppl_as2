@@ -1,12 +1,9 @@
 
-        Function: test
-        Parameter: k, a
-        Body:
-            Var: str = "this is a string";
-            Var: token;
-            token = strtok(str, "-");
-            While ((token != null)) Do
-                printf("%s", token);
-                token = strtok(str, "-");
-            EndWhile.
-        EndBody.
+            Function: returnboolean
+            Body:
+            If str == "Chung Xon" Then
+                Return True;
+            Else
+                Return False;
+                EndIf.
+            EndBody.

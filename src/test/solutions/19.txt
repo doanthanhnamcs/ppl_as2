@@ -1,1 +1,1 @@
-Program([FuncDecl(Id(main)[],([][If(Id(a),[],[])Else([],[])]))])
+Program([FuncDecl(Id('main'),[],([],[If([(Id('a'),[],[])],([],[]))]))])

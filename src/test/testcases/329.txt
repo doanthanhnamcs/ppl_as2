@@ -1,6 +1,11 @@
-
-        Function: main
+Function: iflongnhau
+        Parameter: a, b
         Body:
-            inp = 123 * daf[g132[423][2] * 132 + {13}];
+        Var: id[4412][867][9856][867], stringID[108] = "day la \\ 1 chuoi !!",literal = 120000e-1,  array[2][4] = {{867,445,987},{76,12,744}};
+            If n > 10 Then
+                If n <. 20.5 Then Return x;
+                EndIf.
+                printStrLn(arg);
+            Else fact(x);
+            EndIf.
         EndBody.
-        

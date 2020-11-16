@@ -50,8 +50,6 @@ class ASTGeneration(BKITVisitor):
     def visitComposit(self, ctx: BKITParser.CompositContext):
         intlist = ctx.INT_LIT()
         lst = []
-        #['1','0xFF','0o77','6']
-        #['1','255','555','6']
         for j in intlist:
             i=j.getText()
             x = i.find('x')
@@ -90,7 +88,7 @@ class ASTGeneration(BKITVisitor):
         if ctx.FLOAT_LIT():
             arr += [FloatLiteral(float(ctx.FLOAT_LIT().getText()))]
         if ctx.BOOLEAN_LIT():
-            arr += [BooleanLiteral(bool(ctx.BOOLEAN_LIT().getText()))]
+            arr += [BooleanLiteral(ctx.BOOLEAN_LIT().getText())]
         if ctx.STRING_LIT():
             arr += [StringLiteral(ctx.STRING_LIT().getText())]
         if ctx.array_lit():

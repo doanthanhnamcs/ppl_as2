@@ -1,0 +1,1 @@
+Program([VarDecl(Id(t),IntLiteral(0)),FuncDecl(Id(mk)[VarDecl(Id(x))],([][If(BinaryOp(==,Id(a),IntLiteral(3)),[],[If(BinaryOp(==,Id(b),Id(a)),[],[CallStmt(Id(write),[StringLiteral(b==a==3)]),CallStmt(Id(fwrite),[StringLiteral(xxx)])])Else([],[])])Else([],[])]))])

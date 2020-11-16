@@ -1,11 +1,8 @@
 
         Function: main
-        Parameter: k
         Body:
-            Var: i = 10, k[10][2] = {{}, {}};
-            Do
-                Continue;
-            While i <= 10 EndDo.
-            Return 0;
+        If 1 Then Return ;
+        ElseIf 2 Then Continue;
+        EndIf.
         EndBody.
         

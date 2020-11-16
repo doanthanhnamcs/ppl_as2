@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(ee)[VarDecl(Id(xw))],([][For(Id(i),IntLiteral(1),BinaryOp(<=,Id(i),BinaryOp(*,BinaryOp(*,Id(wex),Id(x)),Id(x))),BinaryOp(+,Id(i),Id(x)),[],[CallStmt(Id(writeln),[Id(i)])])]))])

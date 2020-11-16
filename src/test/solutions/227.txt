@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][])),FuncDecl(Id(mk)[],([][]))])

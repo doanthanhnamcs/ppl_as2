@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(dsa)[VarDecl(Id(n)),VarDecl(Id(k))],([][Assign(Id(xew),UnaryOp(!,BooleanLiteral(true))),Assign(Id(y),BinaryOp(&&,BinaryOp(||,BooleanLiteral(false),BooleanLiteral(true)),BooleanLiteral(true)))]))])

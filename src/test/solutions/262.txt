@@ -1,0 +1,1 @@
+Program([FuncDecl(Id(bar)[VarDecl(Id(nf))],([][While(IntLiteral(2),[],[While(UnaryOp(!,Id(x2)),[],[Assign(Id(x2),BooleanLiteral(true))])])]))])

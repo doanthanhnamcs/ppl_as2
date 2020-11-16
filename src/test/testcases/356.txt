@@ -1,9 +1,10 @@
-
-        Function: fn
-        Parameter: arr[0x123][0o13][312]
+Function: whileindowhile
+        Parameter: x
         Body:
-            Var: hex = 0x123;
-            For(i = f(), a(), s()[12]) Do
-                fn(hex, fn(fn(s + 3, k * 123 || False == 321)));
-            EndFor.
+            Do
+                While a<100 Do
+                    a=a-30;
+                EndWhile.
+            While (a>1)
+            EndDo.
         EndBody.

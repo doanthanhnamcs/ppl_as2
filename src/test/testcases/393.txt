@@ -1,11 +1,4 @@
-
-        Function: test
+Function: index
         Body:
-            print();
+            arr(a + bbb[61.2 *. (x + y)])[2] = b[2][3];
         EndBody.
-        Function: fn1
-        Body: runfn(); EndBody.
-        Function: fn2
-        Body: EndBody.
-        Function: main
-        Body: Return test() + fn1() + fn2(); EndBody.
